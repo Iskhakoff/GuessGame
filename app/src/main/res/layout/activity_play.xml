@@ -141,7 +141,7 @@
             android:id="@+id/btn_forget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_start_new_game"
+            android:text="@string/button_forget"
             android:layout_gravity="center_horizontal"
             style="@style/ButtonForget"/>
 
