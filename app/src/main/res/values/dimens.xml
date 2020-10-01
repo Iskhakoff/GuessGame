@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="root_padding">16dp</dimen>
+    <dimen name="dialog_title_size">16sp</dimen>
+    <dimen name="game_rules_size">18sp</dimen>
+    <dimen name="default_margin_top">16dp</dimen>
+</resources>

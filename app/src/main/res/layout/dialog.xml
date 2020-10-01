@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_dialog"
+            android:padding="@dimen/root_padding">
+
+            <TextView
+                android:id="@+id/dialog_text_status"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:text="@string/congratulation"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dialog_title_size"/>
+
+            <Button
+                android:id="@+id/dialog_btn_start_new_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                style="@style/ButtonStartNewGame"
+                android:text="@string/button_start_new_game"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/dialog_btn_try_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                style="@style/ButtonTryAgain"
+                android:text="@string/button_try_again"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dialog_image_status"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_success"
+            android:scaleType="centerInside"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

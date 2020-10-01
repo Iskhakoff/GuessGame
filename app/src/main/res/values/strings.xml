@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GuessGame</string>
+    <string name="greeting">Hey I wanna play a game with you! Tap play and let\'s go!</string>
+    <string name="description_game">Press the play button and follow the rules.</string>
+    <string name="button_play">Play</string>
+    <string name="button_check">Guess</string>
+    <string name="button_start_new_game">Start new game</string>
+    <string name="button_try_again">Try again</string>
+    <string name="less_value">The value you entered is less than the value that I set. Try it again.</string>
+    <string name="greater_value">The value you entered is greater than the value that I set. Try it again.</string>
+    <string name="congratulation">Oh yeah! You did it! You guessed! Bravo!</string>
+    <string name="entry_value_must_snackbar">The value must be 4 digits!</string>
+    <string name="game_rules">Hey, dude! I generated a 4 digit value and encrypted it with your fingerprint. Are you cool with that? Try to guess. But in order to verify, I will need to make sure that you are you. I will check your fingerprint for verification. Don\'t cheat!</string>
+</resources>
