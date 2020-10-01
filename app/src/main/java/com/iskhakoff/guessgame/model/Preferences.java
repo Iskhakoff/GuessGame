@@ -17,6 +17,8 @@ public class Preferences {
         context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE).edit().putString(PREF_NAME_VALUE, value).apply();
     }
 
-
+    public static void delete(Context context){
+        context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE).edit().clear().apply();
+    }
 
 }

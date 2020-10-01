@@ -105,6 +105,10 @@ public class PlayPresenter extends MvpPresenter<PlayView>{
         getViewState().closeGame();
     }
 
+    public void deleteFromPrefs(){
+        repositoryPreferences.deleteValueFromPrefs();
+    }
+
     public void authenticateToEncrypt(BiometricPrompt biometricPrompt, BiometricPrompt.PromptInfo info){
         readyToEncrypt = true;
         Cipher cipher = null;

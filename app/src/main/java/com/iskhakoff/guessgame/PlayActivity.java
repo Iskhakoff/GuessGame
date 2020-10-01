@@ -47,7 +47,7 @@ public class PlayActivity extends MvpAppCompatActivity implements PlayView, Text
     private ArrayList<TextInputLayout> editTextArray = new ArrayList<>(NUM_OF_DIGITS);
     private String numTemp;
 
-    private Button btnCheck, btnStartNewGame;
+    private Button btnCheck, btnStartNewGame, btnForget;
     private Dialog dialog;
 
     private BiometricPrompt biometricPrompt;
@@ -259,6 +259,12 @@ public class PlayActivity extends MvpAppCompatActivity implements PlayView, Text
     private void setupUI() {
         btnCheck        = findViewById(R.id.btn_check);
         btnStartNewGame = findViewById(R.id.btn_start_new_game);
+        btnForget       = findViewById(R.id.btn_forget);
+
+        btnForget.setOnClickListener(view -> {
+            presenter.deleteFromPrefs();
+            presenter.closeGame();
+        });
 
         btnStartNewGame.setOnClickListener(view -> {
             presenter.startNewGame();

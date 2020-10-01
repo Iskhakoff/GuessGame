@@ -5,6 +5,7 @@
     <string name="button_play">Play</string>
     <string name="button_check">Guess</string>
     <string name="button_start_new_game">Start new game</string>
+    <string name="button_forget">Forget</string>
     <string name="button_try_again">Try again</string>
     <string name="less_value">The value you entered is less than the value that I set. Try it again.</string>
     <string name="greater_value">The value you entered is greater than the value that I set. Try it again.</string>

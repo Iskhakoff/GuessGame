@@ -17,4 +17,8 @@ public class RepositoryPreferences {
     public void setValueToPrefs(String value){
         Preferences.setValue(context, value);
     }
+
+    public void deleteValueFromPrefs(){
+        Preferences.delete(context);
+    }
 }
