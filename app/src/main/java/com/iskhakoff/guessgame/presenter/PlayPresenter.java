@@ -40,12 +40,12 @@ public class PlayPresenter extends MvpPresenter<PlayView>{
     private byte[] initializationVector;
     private boolean readyToEncrypt = false;
 
-
-
     public PlayPresenter(RepositoryPreferences repositoryPreferences){
         this.repositoryPreferences = repositoryPreferences;
         cryptographyManager = new CryptographyManagerImpl();
-        getViewState().showAuthenticateEncrypt();
+        if(repositoryPreferences.getValueFromPrefs().equals("")){
+            getViewState().showAuthenticateEncrypt();
+        }
     }
 
     public void generateValue(BiometricPrompt.CryptoObject cryptoObject){
