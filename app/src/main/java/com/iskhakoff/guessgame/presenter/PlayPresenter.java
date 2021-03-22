@@ -43,9 +43,7 @@ public class PlayPresenter extends MvpPresenter<PlayView>{
     public PlayPresenter(RepositoryPreferences repositoryPreferences){
         this.repositoryPreferences = repositoryPreferences;
         cryptographyManager = new CryptographyManagerImpl();
-        if(repositoryPreferences.getValueFromPrefs().equals("")){
-            getViewState().showAuthenticateEncrypt();
-        }
+        getViewState().showAuthenticateEncrypt();
     }
 
     public void generateValue(BiometricPrompt.CryptoObject cryptoObject){
